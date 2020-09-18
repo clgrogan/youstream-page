@@ -12,10 +12,6 @@ header {
 h1 {
   align-self: flex-start;
 }
-a {
-  color: #401;
-  text-decoration: none;
-}
 /* Navigation bar style */
 .navbar,
 .navbar > div {
@@ -39,7 +35,7 @@ a {
 }
 
 /* display text over image */
-.featured-image-container {
+.featuredCard {
   position: relative;
   text-align: center;
   color: whitesmoke;
@@ -48,7 +44,7 @@ a {
   display: flex;
   position: absolute;
   bottom: 1rem;
-  left: 1.5rem;
+  left: 1.3rem;
 }
 .featured-likes {
   /* position: absolute;
@@ -60,8 +56,17 @@ a {
   border: solid 0.1rem #333;
   border-radius: 0.75rem;
 }
+.featured-link {
+  color: whitesmoke;
+  text-decoration: none;
+}
 
 /* section style */
+.continue-link,
+.trending-link {
+  color: #401;
+  text-decoration: none;
+}
 .featured,
 .continue {
   display: flex;
@@ -70,13 +75,7 @@ a {
 }
 
 /* card style */
-/* .featuredVideoCardContainer,
-.continueVideoCardContainer {
-  min-width: 100px;
-  max-width: 225px;
-} */
-.featuredVideoCard,
-.continueVideoCard {
+.continueCard {
   background-color: rgba(245, 222, 179, 0.4);
   /* background-color: hotpink; */
 }
@@ -98,7 +97,14 @@ a {
   font-size: 0.8rem;
 }
 
-.featuredCards,
+.featuredCards {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+}
+.featuredCard {
+  width: 100%;
+}
 .continueCards {
   width: 95%;
   display: flex;
@@ -118,8 +124,8 @@ a {
   .ys-logo {
     display: none;
   }
-  .featuredVideoCard,
-  .continueVideoCard {
+  .featuredCard,
+  .continueCard {
     /* min-width: 200px; */
     max-width: 300px;
   }
