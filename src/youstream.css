@@ -1,10 +1,20 @@
-/* body */
+/* element styling */
 body {
-  background-color: blanchedalmond;
+  background-color: #ffebcd;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 header {
   background-color: #cad3b5dc;
+}
+h1 {
+  align-self: flex-start;
+}
+a {
+  color: #401;
+  text-decoration: none;
 }
 /* Navigation bar style */
 .navbar,
@@ -14,6 +24,11 @@ header {
   align-items: center;
 }
 
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+}
+
 /* image style */
 .full-logo {
   width: 7rem;
@@ -21,4 +36,91 @@ header {
 
 .ys-logo {
   width: 1.5rem;
+}
+
+/* display text over image */
+.featured-image-container {
+  position: relative;
+  text-align: center;
+  color: whitesmoke;
+}
+.likes-container {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1.5rem;
+}
+.featured-likes {
+  /* position: absolute;
+  bottom: 1rem;
+  left: 1.5rem; */
+  background-color: #222222cc;
+  margin: 0 0.1rem;
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+  border: solid 0.1rem #333;
+  border-radius: 0.75rem;
+}
+
+/* section style */
+.featured,
+.continue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* card style */
+/* .featuredVideoCardContainer,
+.continueVideoCardContainer {
+  min-width: 100px;
+  max-width: 225px;
+} */
+.featuredVideoCard,
+.continueVideoCard {
+  background-color: rgba(245, 222, 179, 0.4);
+  /* background-color: hotpink; */
+}
+.videoThumbnail {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 0;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ddd;
+}
+.summaryVideoTitle {
+  margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+}
+.summaryVideoDescription {
+  margin: 0 0.2rem 0.5rem 0.2rem;
+  font-size: 0.8rem;
+}
+
+.featuredCards,
+.continueCards {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 999px) {
+  .full-logo {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .ys-logo {
+    display: none;
+  }
+  .featuredVideoCard,
+  .continueVideoCard {
+    /* min-width: 200px; */
+    max-width: 300px;
+  }
 }
