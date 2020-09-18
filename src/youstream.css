@@ -117,6 +117,7 @@ a {
 /* card style */
 .continue-card {
   background-color: rgba(245, 222, 179, 0.4);
+  border-radius: 0 0 0.5rem 0.5rem;
   /* background-color: hotpink; */
 }
 .trending-cards {
