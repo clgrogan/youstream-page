@@ -46,7 +46,6 @@ h1 {
   background-color: #dddddd77;
   margin: 0;
   border-radius: 0.5rem;
-  font-size: 1.1;
 }
 div.search {
   display: flex;
@@ -56,14 +55,12 @@ div.search {
 .search-btn {
   border-style: none;
   background-color: transparent;
-  font-size: 1.1rem;
 }
 
 #channels,
 #mylibrary {
   background-color: #dddddd77;
   border-radius: 1rem;
-  font-size: 1.2rem;
 }
 
 /* misc classes */
@@ -80,7 +77,7 @@ div.search {
 }
 
 /* display text over image */
-.featuredCard {
+.featured-card {
   position: relative;
   text-align: center;
   color: whitesmoke;
@@ -118,7 +115,7 @@ a {
 }
 
 /* card style */
-.continueCard {
+.continue-card {
   background-color: rgba(245, 222, 179, 0.4);
   /* background-color: hotpink; */
 }
@@ -157,7 +154,7 @@ a {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.videoThumbnail {
+.video-thumbnail {
   width: 100%;
   height: auto;
   background-color: #fff;
@@ -167,25 +164,25 @@ a {
   border-width: 1px;
   border-color: #ddd;
 }
-.summaryVideoTitle {
+.summary-video-title {
   margin: 0.5rem 0.2rem 0.5rem 0.2rem;
 }
-.summaryVideoDescription {
+.summary-video-description {
   margin: 0 0.2rem 0.5rem 0.2rem;
   font-size: 0.8rem;
 }
 
-.featuredCards,
-.continueCards {
+.featured-cards,
+.continue-cards {
   width: 97%;
   display: flex;
   justify-content: space-around;
 }
-.featuredCard {
+.featured-card {
   width: 100%;
   margin: 0 0.15rem;
 }
-.continueCard {
+.continue-card {
   margin: 0 0.1rem;
 }
 
@@ -202,8 +199,8 @@ a {
   .ys-logo {
     display: none;
   }
-  /* .featuredCard, */
-  .continueCard {
+  /* .featured-card, */
+  .continue-card {
     /* min-width: 200px; */
     max-width: 300px;
   }
@@ -222,5 +219,12 @@ a {
   .trending-link {
     display: flex;
     justify-content: flex-start;
+  }
+  .nav-icon,
+  .search-btn,
+  .search-inp,
+  #channels,
+  #mylibrary {
+    font-size: 1.15rem;
   }
 }
