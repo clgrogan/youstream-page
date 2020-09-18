@@ -63,7 +63,7 @@ div.search {
   border-radius: 1rem;
 }
 
-/* misc classes */
+/* misc styling */
 .fa-youtube {
   font-size: 2.5rem;
 }
@@ -73,7 +73,7 @@ div.search {
 }
 
 .ys-logo {
-  width: 2rem;
+  width: 1.7rem;
 }
 
 /* display text over image */
@@ -132,19 +132,21 @@ a {
   flex-direction: column;
   justify-content: center;
   width: 90%;
-  background-color: rgba(245, 222, 179, 0.4);
+  margin-bottom: 0.2rem;
+  /* background-color: rgba(245, 222, 179, 0.4); */
 }
 .trending-copy {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 0 0 0.5rem 0;
+  background-color: rgba(245, 222, 179, 0.4);
+  border-radius: 0 1rem 1rem 0;
 }
 .trending-copy p {
   padding: 0;
   margin: 0.2rem 0 0.2rem 0.2rem;
   text-align: center;
-  /* background-color: tan; */
 }
 .trending-title {
   font-family: Arial, Helvetica, sans-serif;
@@ -171,7 +173,6 @@ a {
   margin: 0 0.2rem 0.5rem 0.2rem;
   font-size: 0.8rem;
 }
-
 .featured-cards,
 .continue-cards {
   width: 97%;
@@ -183,7 +184,7 @@ a {
   margin: 0 0.15rem;
 }
 .continue-card {
-  margin: 0 0.1rem;
+  margin: 0 0.3rem 0 0;
 }
 
 @media (max-width: 799px) {
