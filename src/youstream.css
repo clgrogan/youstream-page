@@ -7,7 +7,21 @@ body {
   border: 0;
 }
 header {
-  background-color: #cad3b5dc;
+  background-color: #552a2a99;
+  padding: 0.2rem;
+}
+main {
+  margin: 0.5rem;
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+  color: #660000bb;
+  margin: 0;
+  padding: 0 2rem 0 0;
+  border-style: solid;
+  border-width: 2px 0 0 0;
+  border-color: #aaaaaa44;
 }
 h1 {
   align-self: flex-start;
@@ -24,14 +38,45 @@ h1 {
   display: flex;
   flex-direction: row;
 }
+.nb-item {
+  padding: 0 0 0 0.5rem;
+}
+.search-btn,
+.search-inp {
+  background-color: #dddddd77;
+  margin: 0;
+  border-radius: 0.5rem;
+  font-size: 1.1;
+}
+div.search {
+  display: flex;
+  align-items: center;
+}
 
+.search-btn {
+  border-style: none;
+  background-color: transparent;
+  font-size: 1.1rem;
+}
+
+#channels,
+#mylibrary {
+  background-color: #dddddd77;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+
+/* misc classes */
+.fa-youtube {
+  font-size: 2.5rem;
+}
 /* image style */
 .full-logo {
-  width: 7rem;
+  width: 10rem;
 }
 
 .ys-logo {
-  width: 1.5rem;
+  width: 2rem;
 }
 
 /* display text over image */
@@ -47,9 +92,6 @@ h1 {
   left: 1.3rem;
 }
 .featured-likes {
-  /* position: absolute;
-  bottom: 1rem;
-  left: 1.5rem; */
   background-color: #222222cc;
   margin: 0 0.1rem;
   padding: 0.2rem 0.4rem 0.2rem 0.4rem;
@@ -63,7 +105,8 @@ h1 {
 
 /* section style */
 .continue-link,
-.trending-link {
+.trending-link,
+a {
   color: #401;
   text-decoration: none;
 }
@@ -79,28 +122,38 @@ h1 {
   background-color: rgba(245, 222, 179, 0.4);
   /* background-color: hotpink; */
 }
+.trending-cards {
+  display: flex;
+  flex-direction: column;
+}
+.trending-link {
+  display: flex;
+  justify-content: center;
+}
 .trending-card {
   display: flex;
-  justify-content: flex-start;
-  width: 66.6%;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
   background-color: rgba(245, 222, 179, 0.4);
 }
-.trending-right {
+.trending-copy {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 0 0 0.5rem 0;
 }
-.trending-right p {
+.trending-copy p {
   padding: 0;
   margin: 0.2rem 0 0.2rem 0.2rem;
-  background-color: tan;
+  text-align: center;
+  /* background-color: tan; */
 }
 .trending-title {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 .trending-channel {
-  background-color: pink;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -123,8 +176,7 @@ h1 {
 }
 
 .featuredCards,
-.continueCards,
-.trendingCards {
+.continueCards {
   width: 97%;
   display: flex;
   justify-content: space-around;
@@ -137,7 +189,7 @@ h1 {
   margin: 0 0.1rem;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 799px) {
   .full-logo {
     display: none;
   }
@@ -146,7 +198,7 @@ h1 {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .ys-logo {
     display: none;
   }
@@ -154,5 +206,21 @@ h1 {
   .continueCard {
     /* min-width: 200px; */
     max-width: 300px;
+  }
+  .trending-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 70%;
+  }
+  .trending-img-cont {
+    width: 100%;
+  }
+  .trending-copy p {
+    text-align: left;
+  }
+  .trending-link {
+    display: flex;
+    justify-content: flex-start;
   }
 }
