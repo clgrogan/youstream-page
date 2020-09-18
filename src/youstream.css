@@ -79,6 +79,31 @@ h1 {
   background-color: rgba(245, 222, 179, 0.4);
   /* background-color: hotpink; */
 }
+.trending-card {
+  display: flex;
+  justify-content: flex-start;
+  width: 66.6%;
+  background-color: rgba(245, 222, 179, 0.4);
+}
+.trending-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.trending-right p {
+  padding: 0;
+  margin: 0.2rem 0 0.2rem 0.2rem;
+  background-color: tan;
+}
+.trending-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.trending-channel {
+  background-color: pink;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 .videoThumbnail {
   width: 100%;
   height: auto;
@@ -98,7 +123,8 @@ h1 {
 }
 
 .featuredCards,
-.continueCards {
+.continueCards,
+.trendingCards {
   width: 97%;
   display: flex;
   justify-content: space-around;
