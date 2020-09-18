@@ -228,4 +228,7 @@ a {
   #mylibrary {
     font-size: 1.15rem;
   }
+  .likes-container {
+    font-size: 0.8rem;
+  }
 }
